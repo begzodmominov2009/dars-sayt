@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kod.uz — HTML, CSS, JavaScript darslari</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <button id="menuBtn" class="icon-btn" aria-label="Menyu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">kod<span class="brand-ext">.uz</span></span>
+    </div>
+    <div class="topbar-tabs" id="topbarTabs"></div>
+    <div class="topbar-right">
+      <div class="progress-pill" id="progressPill">0% tugallandi</div>
+    </div>
+  </header>
+
+  <div class="app">
+
+    <!-- SIDEBAR (file explorer) -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">EXPLORER</div>
+      <div class="explorer" id="explorer"></div>
+      <div class="sidebar-foot">
+        <p>💡 Har 5-mavzudan so'ng <b>TEST</b> chiqadi.</p>
+        <button id="resetProgress" class="link-btn">Progressni tozalash</button>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="content" id="content">
+      <!-- rendered by JS -->
+    </main>
+
+  </div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
